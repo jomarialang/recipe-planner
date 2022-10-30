@@ -67,7 +67,7 @@ async function getResults (){
     const reqInit = { method: 'GET', headers, mode: 'cors', cache: 'default'};
 
 
-    const response = await fetch(`http://localhost:5000/search?query=${cuisine_collection.join(',')}`, reqInit);
+    const response = await fetch(`/search?query=${cuisine_collection.join(',')}`, reqInit);
 
     const json = await response.json();
 
