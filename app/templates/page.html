@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="container">
+    <h1 class="mt-5">Project Demo</h1>
+    <p>Pleade chose your favourite cuisine</p>
+</div>
+
+{% endblock %}
+{% block content %}
+<div class="grid">
+    {% for cuisine in cuisines %}
+        <div class="card text-center py-4" onclick="onClickAddCuisine('{{cuisine}}');">
+            {{ cuisine }}
+        </div>
+    {% endfor %}
+
+
+</div>
+
+<h2 class="mt-5">Results</h2>
+<div id="results-id">
+
+</div>
+{% endblock %}

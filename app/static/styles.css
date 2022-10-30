@@ -1,0 +1,35 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;    
+}
+
+
+.grid > .card {
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.grid > .card:hover {
+    background-color: rgb(68, 68, 245);
+    color: white;
+}
+
+.icon {
+    width: 18px;
+}
+
+.badge {
+    cursor: pointer;
+    transition: 200ms;
+}
+.close:hover {
+    background-color: #822a33 !important;
+}
+
+#results-id {
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
